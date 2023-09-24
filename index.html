@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+</head>
+<body class="min-h-screen grid place-items-center">
+
+  <main class="md:grid md:grid-cols-2 md:place-items-center md:mx-16 lg:mx-28 mt-6">
+      <div class="relative grid md:col-start-2  place-content-center bg-[url('images/pattern-bg.svg')] bg-contain bg-no-repeat bg-center md:order-last md:w-[25rem] lg:w-[35rem]">
+        <img id="picture" class="w-60 md:w-[20rem] lg:w-[27rem] py-6 md:my-6 md:mr-4  drop-shadow-2xl" src="images/image-tanya.jpg" alt="Person Picture">
+        <button aria-label="Press left to back and right to next" type="submit" class="absolute flex items-center justify-center gap-x-8 bg-white px-2 py-3 rounded-full shadow-xl w-20 bottom-[2%] mx-auto left-0 right-0 md:bottom-[6%] md:left-[-40%]">
+          <img class="w-[.65rem]" onclick="back()" src="images/icon-prev.svg" alt="Back">
+          <img class="w-[.7rem]" onclick="next()" src="images/icon-next.svg" alt="Next">
+        </button>
+      </div>
+
+      <div class="relative lg:absolute lg:col-start-1 lg:mr-[35rem] 2xl:mr-[44rem] lg:ml-[10rem] text-center md:text-left mt-16 mx-8">
+        <div class="lg:top-0 lg:bottom-0 lg:my-auto">
+          <img class="absolute left-0 right-0 mx-auto top-[-11%] w-16 xl:w-24 xl:left-[-50%] xl:top-[-22%]" src="images/pattern-quotes.svg">
+          <q id="quote" class="text-lg md:text-xl lg:text-3xl 2xl:text-4xl text-[#202046]">I’ve been interested in coding for a while but never taken the jump, until now. 
+          I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+          excited about the future.</q>
+        </div>
+        <div class="mt-6 md:flex md:items-center md:gap-x-3">
+          <p id="name" class="text-lg font-extrabold text-[#202046]">Tanya Sinclair</p>
+          <p id="job" class="text-[#babacf]">UX Engineer</p>
+        </div>
+      </div>
+  </main>
+  
+  <footer class="text-[#babacf] text-xs text-center pb-2 mt-10 mx-2">
+    <p>Challenge by <a class="hover:text-[#202046] font-bold" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="hover:text-[#202046] font-bold" href="https://github.com/VickyAzola/TestimonialsSlider" target="_blank">Victoria Azola</a>.</p>
+  </footer>
+
+</body>
+<script src="index.js"></script>
+</html>
